@@ -1,0 +1,85 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 330px;
+    background-color: rgb(236, 240, 243);
+}
+
+.wrapper {
+    background-color: #ceced1;;
+    text-align: center;
+    margin:20px ;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid powderblue ;
+    border-radius: 50%;
+    margin: 0 0 30px 80px;
+    box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1;
+}
+
+.profile {
+    width: 300px;
+    color: #44476a;
+    font-size: 14px;
+    font-weight: 500;
+    color: #31344b;
+    text-align: center;
+   justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 15px;
+}
+
+p {
+    box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1;
+    margin-bottom: 15px;
+    line-height: 2;
+} 
+
+#btn  {
+  background-color: #ecf0f3;
+  line-height: 2;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1;
+  cursor: pointer;
+}
+
+/* #btn:hover {
+    background-color: lightskyblue;
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
