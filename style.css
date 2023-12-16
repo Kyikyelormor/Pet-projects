@@ -10,21 +10,25 @@
 
 body {
     min-height: 100vh;
-    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .container {
     width: 330px;
     background-color: rgb(236, 240, 243);
+    border-radius: 20px;
 }
 
 .wrapper {
-    background-color: #ceced1;;
+    background-color: black;
+    color: #fff;
     text-align: center;
     margin:20px ;
+    border-radius: 7px;
+    text-shadow: 2px 2px  black;
 }
 
 .img {
@@ -53,16 +57,25 @@ p {
     box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1;
     margin-bottom: 15px;
     line-height: 2;
+    border-radius: 8px;
 } 
 
 #btn  {
-  background-color: #ecf0f3;
+  padding: 3px;
+  background-color: black;
   line-height: 2;
   outline: none;
   border: none;
-  border-radius: 8px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 10px;
   box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1;
+  text-shadow: 1px 1px  black;
   cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #ceced1;
 }
 
 
