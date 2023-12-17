@@ -13,7 +13,7 @@ btn.addEventListener("click", function () {
   });
 
  async function getUserInfo(){
-    const response = await fetch("https://randomuser.me/api/");
+    const response = await fetch('https://randomuser.me/api/');
     const result = await response.json();
     console.log(result);
     UserInfo(result);
@@ -21,17 +21,15 @@ btn.addEventListener("click", function () {
 
 
 function UserInfo(result){
-  img.src = result.results[0].picture.large;
-  first.textContent = result.results[0].name.first;
-  last.textContent = result.results[0].name.last;
+  img.src = result.results[0]?.picture?.large;
+  first.textContent = result.results[0]?.name?.first;
+  last.textContent = result.results[0]?.name?.last;
   street.textContent =  result.results[0]?.location?.street?.country;
-  age.textContent = result.results[0].dob.age;
-
-  // Format the date of birth using the Date object
-  const dobDate = new Date(result.results[0].dob.date);
+  age.textContent = result.results[0]?.dob?.age;
+  const dobDate = new Date(result.results[0]?.dob?.date);
   dob.textContent = dobDate.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 
-  phone.textContent = result.results[0].phone;
-  email.textContent = result.results[0].email;
+  phone.textContent = result.results[0]?.phone;
+  email.textContent = result.results[0]?.email;
 }
 
